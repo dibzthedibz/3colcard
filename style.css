@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --neutral: hsla(0, 0%, 100%, 0.75);
+  --lt-grey: hsl(0, 0%, 95%);
+}
+html {
+  font-size: 15px;
+}
+@font-face {
+  font-family: "Lexend_Deca", sans-serif;
+  src: url(fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf) format(truetype);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BigShoulders", sans-serif;
+  src: url(./fonts/Big_Shoulders/BigShoulders-VariableFont_opszwght.ttf)
+    format(truetype);
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Lexend_Deca", sans-serif;
+}
+
+.wrapper {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  right: 30%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* padding: 1rem; */
+}
+
+.card p {
+    /* margin: 1rem; */
+  color: var(--neutral);
+  font-size: 0.5rem;
+  line-height: 1.5;
+}
+
+button {
+  width: 10rem;
+  padding: 1rem;
+  border-radius: 999px;
+  border: none;
+  margin: 1rem 1rem 1rem 0;
+}
+
+button:hover {
+  background-color: rgba(240, 248, 255, 0);
+  border: 2px solid white;
+  color: white;
+}
+
+.wrapper .card button:active {
+  color: var(--neutral);
+}
+
+.wrapper .card:first-child {
+  background-color: var(--orange);
+}
+.wrapper .card:nth-child(2) {
+  background-color: var(--cyan);
+}
+.wrapper .card:last-child {
+  background-color: var(--very-dark-cyan);
+}
+
+.wrapper .card:first-child button {
+  color: var(--orange);
+}
+.wrapper .card:nth-child(2) button {
+  color: var(--cyan);
+}
+.wrapper .card:last-child button {
+  color: var(--very-dark-cyan);
+}
+
+img {
+  width: 5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--lt-grey);
+  font-family: "BigShoulders", sans-serif;
+  font-weight: 700;
+}
