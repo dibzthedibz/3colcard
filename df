@@ -1,0 +1,95 @@
+[33mcommit a7c1be822d0da516c7899ac446736357b2add870[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Ryan <Dibzthedibz@gmail.com>
+Date:   Sun Mar 30 20:17:28 2025 -0700
+
+    fixing extra index file
+
+ index.html  |  74 [32m+++++++++++++++++++[m[31m-----------[m
+ index2.html |  65 [31m--------------------------[m
+ style.css   | 150 [32m+++++++++++++++++++++++++++++[m[31m-------------------------------[m
+ style2.css  | 112 [31m---------------------------------------------[m
+ 4 files changed, 120 insertions(+), 281 deletions(-)
+
+[33mcommit 830d08d77fd030f2899c0c2e528935f9da86aba1[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Ryan <Dibzthedibz@gmail.com>
+Date:   Sun Mar 30 20:14:40 2025 -0700
+
+    Initial Commit
+
+ .gitignore                                         |  16 [32m+++[m
+ README-template.md                                 | 111 [32m++++++++++++++++++++[m
+ README.md                                          |  92 [32m++++++++++++++++[m
+ design/active-states.jpg                           | Bin [31m0[m -> [32m39998[m bytes
+ design/desktop-design.jpg                          | Bin [31m0[m -> [32m38652[m bytes
+ design/desktop-preview.jpg                         | Bin [31m0[m -> [32m44650[m bytes
+ design/mobile-design.jpg                           | Bin [31m0[m -> [32m34648[m bytes
+ .../BigShoulders-VariableFont_opsz,wght.ttf        | Bin [31m0[m -> [32m318776[m bytes
+ fonts/Big_Shoulders/OFL.txt                        |  93 [32m+++++++++++++++++[m
+ fonts/Big_Shoulders/README.txt                     | 108 [32m+++++++++++++++++++[m
+ fonts/Big_Shoulders/static/BigShoulders-Black.ttf  | Bin [31m0[m -> [32m94448[m bytes
+ fonts/Big_Shoulders/static/BigShoulders-Bold.ttf   | Bin [31m0[m -> [32m94528[m bytes
+ .../static/BigShoulders-ExtraBold.ttf              | Bin [31m0[m -> [32m94428[m bytes
+ .../static/BigShoulders-ExtraLight.ttf             | Bin [31m0[m -> [32m94352[m bytes
+ fonts/Big_Shoulders/static/BigShoulders-Light.ttf  | Bin [31m0[m -> [32m94480[m bytes
+ fonts/Big_Shoulders/static/BigShoulders-Medium.ttf | Bin [31m0[m -> [32m94404[m bytes
+ .../Big_Shoulders/static/BigShoulders-Regular.ttf  | Bin [31m0[m -> [32m94396[m bytes
+ .../Big_Shoulders/static/BigShoulders-SemiBold.ttf | Bin [31m0[m -> [32m94312[m bytes
+ fonts/Big_Shoulders/static/BigShoulders-Thin.ttf   | Bin [31m0[m -> [32m93856[m bytes
+ .../static/BigShoulders_18pt-Black.ttf             | Bin [31m0[m -> [32m94536[m bytes
+ .../static/BigShoulders_18pt-Bold.ttf              | Bin [31m0[m -> [32m94556[m bytes
+ .../static/BigShoulders_18pt-ExtraBold.ttf         | Bin [31m0[m -> [32m94480[m bytes
+ .../static/BigShoulders_18pt-ExtraLight.ttf        | Bin [31m0[m -> [32m94436[m bytes
+ .../static/BigShoulders_18pt-Light.ttf             | Bin [31m0[m -> [32m94500[m bytes
+ .../static/BigShoulders_18pt-Medium.ttf            | Bin [31m0[m -> [32m94660[m bytes
+ .../static/BigShoulders_18pt-Regular.ttf           | Bin [31m0[m -> [32m94480[m bytes
+ .../static/BigShoulders_18pt-SemiBold.ttf          | Bin [31m0[m -> [32m94440[m bytes
+ .../static/BigShoulders_18pt-Thin.ttf              | Bin [31m0[m -> [32m94032[m bytes
+ .../static/BigShoulders_24pt-Black.ttf             | Bin [31m0[m -> [32m94540[m bytes
+ .../static/BigShoulders_24pt-Bold.ttf              | Bin [31m0[m -> [32m94520[m bytes
+ .../static/BigShoulders_24pt-ExtraBold.ttf         | Bin [31m0[m -> [32m94564[m bytes
+ .../static/BigShoulders_24pt-ExtraLight.ttf        | Bin [31m0[m -> [32m94308[m bytes
+ .../static/BigShoulders_24pt-Light.ttf             | Bin [31m0[m -> [32m94468[m bytes
+ .../static/BigShoulders_24pt-Medium.ttf            | Bin [31m0[m -> [32m94496[m bytes
+ .../static/BigShoulders_24pt-Regular.ttf           | Bin [31m0[m -> [32m94532[m bytes
+ .../static/BigShoulders_24pt-SemiBold.ttf          | Bin [31m0[m -> [32m94488[m bytes
+ .../static/BigShoulders_24pt-Thin.ttf              | Bin [31m0[m -> [32m94060[m bytes
+ .../static/BigShoulders_36pt-Black.ttf             | Bin [31m0[m -> [32m94648[m bytes
+ .../static/BigShoulders_36pt-Bold.ttf              | Bin [31m0[m -> [32m94512[m bytes
+ .../static/BigShoulders_36pt-ExtraBold.ttf         | Bin [31m0[m -> [32m94496[m bytes
+ .../static/BigShoulders_36pt-ExtraLight.ttf        | Bin [31m0[m -> [32m94396[m bytes
+ .../static/BigShoulders_36pt-Light.ttf             | Bin [31m0[m -> [32m94516[m bytes
+ .../static/BigShoulders_36pt-Medium.ttf            | Bin [31m0[m -> [32m94332[m bytes
+ .../static/BigShoulders_36pt-Regular.ttf           | Bin [31m0[m -> [32m94540[m bytes
+ .../static/BigShoulders_36pt-SemiBold.ttf          | Bin [31m0[m -> [32m94460[m bytes
+ .../static/BigShoulders_36pt-Thin.ttf              | Bin [31m0[m -> [32m94144[m bytes
+ .../static/BigShoulders_60pt-Black.ttf             | Bin [31m0[m -> [32m94484[m bytes
+ .../static/BigShoulders_60pt-Bold.ttf              | Bin [31m0[m -> [32m94212[m bytes
+ .../static/BigShoulders_60pt-ExtraBold.ttf         | Bin [31m0[m -> [32m94404[m bytes
+ .../static/BigShoulders_60pt-ExtraLight.ttf        | Bin [31m0[m -> [32m94260[m bytes
+ .../static/BigShoulders_60pt-Light.ttf             | Bin [31m0[m -> [32m94376[m bytes
+ .../static/BigShoulders_60pt-Medium.ttf            | Bin [31m0[m -> [32m94392[m bytes
+ .../static/BigShoulders_60pt-Regular.ttf           | Bin [31m0[m -> [32m94472[m bytes
+ .../static/BigShoulders_60pt-SemiBold.ttf          | Bin [31m0[m -> [32m94348[m bytes
+ .../static/BigShoulders_60pt-Thin.ttf              | Bin [31m0[m -> [32m93868[m bytes
+ fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf | Bin [31m0[m -> [32m174660[m bytes
+ fonts/Lexend_Deca/OFL.txt                          |  93 [32m+++++++++++++++++[m
+ fonts/Lexend_Deca/README.txt                       |  71 [32m+++++++++++++[m
+ fonts/Lexend_Deca/static/LexendDeca-Black.ttf      | Bin [31m0[m -> [32m78624[m bytes
+ fonts/Lexend_Deca/static/LexendDeca-Bold.ttf       | Bin [31m0[m -> [32m78760[m bytes
+ fonts/Lexend_Deca/static/LexendDeca-ExtraBold.ttf  | Bin [31m0[m -> [32m78844[m bytes
+ fonts/Lexend_Deca/static/LexendDeca-ExtraLight.ttf | Bin [31m0[m -> [32m78636[m bytes
+ fonts/Lexend_Deca/static/LexendDeca-Light.ttf      | Bin [31m0[m -> [32m78796[m bytes
+ fonts/Lexend_Deca/static/LexendDeca-Medium.ttf     | Bin [31m0[m -> [32m78824[m bytes
+ fonts/Lexend_Deca/static/LexendDeca-Regular.ttf    | Bin [31m0[m -> [32m78488[m bytes
+ fonts/Lexend_Deca/static/LexendDeca-SemiBold.ttf   | Bin [31m0[m -> [32m78872[m bytes
+ fonts/Lexend_Deca/static/LexendDeca-Thin.ttf       | Bin [31m0[m -> [32m78508[m bytes
+ images/favicon-32x32.png                           | Bin [31m0[m -> [32m1063[m bytes
+ images/icon-luxury.svg                             |   1 [32m+[m
+ images/icon-sedans.svg                             |   1 [32m+[m
+ images/icon-suvs.svg                               |   1 [32m+[m
+ index.html                                         |  45 [32m++++++++[m
+ index2.html                                        |  65 [32m++++++++++++[m
+ style-guide.md                                     |  39 [32m+++++++[m
+ style.css                                          | 116 [32m+++++++++++++++++++++[m
+ style2.css                                         | 112 [32m++++++++++++++++++++[m
+ 76 files changed, 964 insertions(+)
